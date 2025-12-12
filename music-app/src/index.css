@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* -----------------------------------------------------
+   Custom CSS for Fade-In Animation
+   ----------------------------------------------------- */
+
+@keyframes songFadeInReliable {
+  0% {
+    opacity: 0;
+  } /* Start invisible */
+  5% {
+    opacity: 0;
+  } /* Hold invisible for 5% of the duration (100ms for 2s anim) */
+  100% {
+    opacity: 1;
+  } /* End fully visible */
+}
+
+/* This is the new class we will use in the React component */
+.song-title-animate {
+  /* Use a clear duration (e.g., 2s) */
+  animation: songFadeInReliable 4s ease-out forwards;
+
+  /* Ensure the element starts transparently before the animation begins */
+  opacity: 0;
+}
