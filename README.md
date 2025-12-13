@@ -21,4 +21,5 @@ A fully responsive, interactive music player built with React. Features include 
 - Framer Motion (for optional animations)
 - React Icons
 
-## Project Structure
+## Demo
+https://soulful-music-app.netlify.app/
